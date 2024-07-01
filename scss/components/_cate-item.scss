@@ -31,7 +31,6 @@
         }
 
         @include abstracts.screen(md) {
-            flex-direction: row;
             width: 88px;
             height: 88px;
             margin: 0;
