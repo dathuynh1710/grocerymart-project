@@ -9,6 +9,7 @@ html {
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-group-separate: #ededf6;
+    --footer-bg-color: var(--header-bg-color);
 
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(237, 237, 246, 0.2);

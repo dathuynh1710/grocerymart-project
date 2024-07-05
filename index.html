@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +28,9 @@
         <script>
             load("#header", "./templates/header.html");
         </script>
-        <div class="container home">
+
+        <!-- Main -->
+        <main class="container home">
             <!-- Slideshow -->
             <div class="home__container">
                 <div class="slideshow">
@@ -375,7 +377,7 @@
                         <article class="product-card">
                             <div class="product-card__img-wrap">
                                 <a href="#!">
-                                    <img src="./assets/img/product/item-6.jpg" alt="" class="product-card__thumb" />
+                                    <img src="./assets/img/product/item-6.png" alt="" class="product-card__thumb" />
                                 </a>
 
                                 <button class="like-btn product-card__like-btn">
@@ -401,7 +403,7 @@
                         <article class="product-card">
                             <div class="product-card__img-wrap">
                                 <a href="#!">
-                                    <img src="./assets/img/product/item-7.jpg" alt="" class="product-card__thumb" />
+                                    <img src="./assets/img/product/item-7.png" alt="" class="product-card__thumb" />
                                 </a>
 
                                 <button class="like-btn product-card__like-btn">
@@ -553,12 +555,12 @@
                     </div>
                 </div>
             </section>
+        </main>
 
-            <!-- Footer-->
-            <footer id="footer"></footer>
-            <script>
-                load("#footer", "./templates/footer.html");
-            </script>
-        </div>
+        <!-- Footer-->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
     </body>
 </html>
