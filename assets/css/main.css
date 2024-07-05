@@ -2178,6 +2178,8 @@ html {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
   height: 46px;
   padding: 0 20px;
   background: #f8f8fb;
