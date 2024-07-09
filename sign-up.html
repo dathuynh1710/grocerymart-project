@@ -40,6 +40,15 @@
         <main class="auth">
             <!-- Auth intro -->
             <div class="auth__intro">
+                <!-- Logo -->
+                <a href="./" class="logo auth__intro-logo d-none d-md-flex">
+                    <img
+                        src="./assets/icons/logo.svg"
+                        alt="grocerymart"
+                        class="logo__img"
+                    />
+                    <h1 class="logo__title">grocerymart</h1>
+                </a>
                 <img
                     src="./assets/img/auth/intro.svg"
                     alt=""
@@ -49,9 +58,15 @@
                     The best of luxury brand values, high quality products, and
                     innovative services
                 </p>
+                <button
+                    class="auth__intro-next d-none d-md-flex js-toggle"
+                    toggle-target="#auth-content"
+                >
+                    <img src="./assets/img/auth/intro-arrow.svg" alt="" />
+                </button>
             </div>
             <!-- Auth content -->
-            <div class="auth__content">
+            <div id="auth-content" class="auth__content hide">
                 <div class="auth__content-inner">
                     <!-- Logo -->
                     <a href="./" class="logo">
@@ -67,7 +82,7 @@
                         Let’s create your account and Shop like a pro and save
                         money.
                     </p>
-                    <form action="" class="form auth__form">
+                    <form action="./index-logined.html" class="form auth__form">
                         <div class="form__group">
                             <div class="form__text-input">
                                 <input
@@ -159,5 +174,8 @@
                 </div>
             </div>
         </main>
+        <script>
+            window.dispatchEvent(new Event("template-loaded"));
+        </script>
     </body>
 </html>
