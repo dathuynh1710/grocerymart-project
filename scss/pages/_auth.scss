@@ -2,6 +2,9 @@
 .auth {
     display: flex;
     min-height: 100vh;
+    @supports (-webkit-touch-callout: none) {
+        min-height: -webkit-fill-available;
+    }
 
     &__intro,
     &__content {
@@ -16,6 +19,7 @@
         align-items: center;
         justify-content: center;
         gap: 50px;
+        background: var(--auth-intro-bg);
 
         &-next,
         &-logo {
@@ -41,6 +45,10 @@
             font-size: 1.8rem;
             font-weight: 500;
             line-height: 144.444%;
+
+            @include abstracts.screen(md) {
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -67,6 +75,10 @@
 
             width: min(460px, 100%);
             margin: 0 auto;
+
+            @include abstracts.screen(md) {
+                padding: 32px 0;
+            }
         }
     }
 
@@ -75,6 +87,11 @@
         font-size: 3rem;
         font-weight: 500;
         line-height: 146.667%;
+
+        @include abstracts.screen(md) {
+            margin-top: 40px;
+            font-size: 2.2rem;
+        }
     }
 
     &__desc {
@@ -84,11 +101,19 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
     }
 
     &__form {
         width: 100%;
         margin-top: 30px;
+
+        @include abstracts.screen(md) {
+            margin-top: 0;
+        }
     }
 
     &__link {
@@ -96,6 +121,10 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
     }
 
     &__btn-group {
@@ -103,6 +132,11 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+
+        @include abstracts.screen(md) {
+            margin-top: 40px;
+            gap: 20px;
+        }
     }
 
     &__btn {
@@ -114,5 +148,14 @@
         color: #9e9da8;
         font-size: 1.8rem;
         line-height: 144.444%;
+
+        @include abstracts.screen(md) {
+            margin-top: 40px;
+            font-size: 1.6rem;
+        }
+
+        &-link {
+            font-size: inherit;
+        }
     }
 }
