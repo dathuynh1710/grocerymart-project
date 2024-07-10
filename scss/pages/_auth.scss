@@ -45,6 +45,7 @@
             font-size: 1.8rem;
             font-weight: 500;
             line-height: 144.444%;
+            color: var(--auth-intro-text-color);
 
             @include abstracts.screen(md) {
                 font-size: 1.5rem;
@@ -87,6 +88,7 @@
         font-size: 3rem;
         font-weight: 500;
         line-height: 146.667%;
+        color: var(--auth-heading-color);
 
         @include abstracts.screen(md) {
             margin-top: 40px;
@@ -97,7 +99,7 @@
     &__desc {
         margin-top: 10px;
         color: #9e9da8;
-        padding: 0 30px;
+        padding: 0 20px;
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;

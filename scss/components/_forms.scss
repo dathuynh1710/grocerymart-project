@@ -63,7 +63,7 @@ $error-color: #ed4337;
             margin-left: 12px;
         }
         &::placeholder {
-            color: #d2d1d6;
+            color: var(--form-placeholder-color);
         }
         @include abstracts.screen(md) {
             font-size: 1.6rem;
@@ -132,7 +132,7 @@ $error-color: #ed4337;
             border-color: transparent transparent #fff #fff;
             rotate: -45deg;
             left: 2px;
-            top: 5px;
+            top: 4px;
         }
     }
 }

@@ -1327,8 +1327,8 @@ input {
 }
 html.dark {
   --text-color: #fff;
-  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(126deg) brightness(104%)
-      contrast(101%);
+  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(100%)
+      saturate(1%) hue-rotate(126deg) brightness(104%) contrast(101%);
   --header-bg-color: #171c28;
   --top-act-group-bg-color: #292e39;
   --top-act-group-shadow: rgba(0, 0, 0, 0.2);
@@ -1338,11 +1338,11 @@ html.dark {
   --footer-text-color: #9e9da6;
   --dropdown-bg-color: #2f3441;
   --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
-  --dropdown-arrow-color: brightness(0) saturate(100%) invert(17%) sepia(27%) saturate(487%) hue-rotate(185deg)
-      brightness(89%) contrast(88%);
+  --dropdown-arrow-color: brightness(0) saturate(100%) invert(17%) sepia(27%)
+      saturate(487%) hue-rotate(185deg) brightness(89%) contrast(88%);
   --top-menu-border-color: #171c28;
-  --menu-column-icon-color: brightness(0) saturate(100%) invert(95%) sepia(6%) saturate(527%) hue-rotate(180deg)
-      brightness(107%) contrast(96%);
+  --menu-column-icon-color: brightness(0) saturate(100%) invert(95%) sepia(6%)
+      saturate(527%) hue-rotate(180deg) brightness(107%) contrast(96%);
   --sidebar-bg: #292e39;
   --sidebar-shadow: rgba(23, 28, 40, 0.4);
   --cate-item-bg: #171c28;
@@ -1357,6 +1357,11 @@ html.dark {
   --filter-form-tag-bg: #171c28;
   --filter-form-arrow-color: var(--dropdown-arrow-color);
   --filter-form-footer-bg: var(--dropdown-bg-color);
+  --auth-content-bg: #292e39;
+  --auth-intro-bg: #171c28;
+  --auth-intro-text-color: #b9babe;
+  --auth-heading-color: #b9babe;
+  --form-placeholder-color: #b9babe;
 }
 @media (max-width: 991.98px) {
   html.dark {
@@ -1391,6 +1396,7 @@ html {
   --filter-form-tag-bg: #f8f8fb;
   --filter-form-footer-bg: #fff;
   --auth-content-bg: #fff;
+  --form-placeholder-color: #d2d1d6;
 }
 @media (max-width: 991.98px) {
   html {
@@ -2587,7 +2593,7 @@ html {
   margin-left: 12px;
 }
 .form__input::placeholder {
-  color: #d2d1d6;
+  color: var(--form-placeholder-color);
 }
 @media (max-width: 767.98px) {
   .form__input {
@@ -2649,7 +2655,7 @@ html {
   border-color: transparent transparent #fff #fff;
   rotate: -45deg;
   left: 2px;
-  top: 5px;
+  top: 4px;
 }
 
 .home__container {
@@ -2727,6 +2733,7 @@ html {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 144.444%;
+  color: var(--auth-intro-text-color);
 }
 @media (max-width: 767.98px) {
   .auth__intro-text {
@@ -2767,6 +2774,7 @@ html {
   font-size: 3rem;
   font-weight: 500;
   line-height: 146.667%;
+  color: var(--auth-heading-color);
 }
 @media (max-width: 767.98px) {
   .auth__heading {
@@ -2777,7 +2785,7 @@ html {
 .auth__desc {
   margin-top: 10px;
   color: #9e9da8;
-  padding: 0 30px;
+  padding: 0 20px;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 146.667%;
