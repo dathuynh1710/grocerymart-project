@@ -2738,7 +2738,7 @@ html {
   top: 80px;
 }
 .auth__intro-img {
-  width: var(--width);
+  width: min(424px, 100%);
   max-width: 100%;
 }
 .auth__intro-text {
