@@ -26,6 +26,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 30px;
     }
     &__heading {
         font-size: 2.4rem;
@@ -42,6 +43,14 @@
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 144.444%;
+    }
+    &__desc {
+        margin-top: 6px;
+        font-size: 1.5rem;
+        line-height: 146.667%;
+    }
+    &__form {
+        margin-bottom: 30px;
     }
     &__list {
         margin-top: -30px;
@@ -117,6 +126,10 @@
                 content: url(../icons/checkbox-checked.svg);
             }
         }
+    }
+    &__form-row {
+        flex-direction: row;
+        gap: 20px;
     }
 }
 .cart-info + .cart-info {
@@ -346,11 +359,13 @@
     display: flex;
     align-items: center;
     gap: 20px;
-
     margin-top: 30px;
     padding: 20px;
     border-radius: 20px;
-    background: #f6f6f6;
+    background: var(--checkout-payment-item-bg);
+    @include abstracts.screen(sm) {
+        align-items: flex-start;
+    }
     &--pointer {
         cursor: pointer;
     }
@@ -360,6 +375,17 @@
         object-fit: cover;
     }
     &__content {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        gap: 20px;
+
+        @include abstracts.screen(sm) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__info {
         flex: 1;
     }
     &__title {
